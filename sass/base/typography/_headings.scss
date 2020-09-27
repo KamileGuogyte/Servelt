@@ -1,0 +1,25 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Sen', sans-serif;
+	clear: both;
+}
+
+h1 {
+	font-size: 3.750em;
+
+	&.title {
+		margin: 0 0 40px 0;
+	}
+}
+
+h2 {
+
+	&.title {
+		margin: 0 0 20px 0;
+	}
+
+}

@@ -1,0 +1,97 @@
+section {
+    &.breadcrumbs {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: $darkblue;
+        padding: 25px 30px;
+        color: $white;
+
+        .breadcrumbs {
+            &__change {
+                display: flex;
+                align-items: center;
+                color: $white;
+
+                &:before {
+                    content: '';
+                    margin-right: 20px;
+                    width: 13px;
+                    height: 14px;
+                    background-image: url('img/icons/arrow-back.svg');
+                    background-size: 100%;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    display: block;
+                }
+            }
+
+            &__cart {
+                padding: 0;
+                background: transparent;
+
+                &:before {
+                    content: '';
+                    width: 22px;
+                    height: 22px;
+                    background-image: url('img/icons/cart.svg');
+                    background-size: 100%;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    display: block;
+                }
+
+            }
+        }
+    }
+
+    &.page-content {
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        .page-content {
+            &__wrapper {
+                width: 75%;
+            }
+
+            &__sidebar {
+                width: 20%;
+                // position: absolute;
+                // top: 0;
+                // right: 0;
+                // transform: translateX(100%);
+
+                >ul {
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+
+                    >li {
+
+                        >a {
+                            text-transform: uppercase;
+                            margin-bottom: 20px;
+                        }
+                    }
+
+                    ul {
+                        margin: 0;
+                        list-style: none;
+                        padding: 0 0 0 10px;
+                        border-left: 1px solid $lightgray;
+
+                        >li {
+                            padding: 10px 0;
+                        }
+                    }
+                }
+
+                a {
+                    display: block;
+                }
+            }
+        }
+    }
+}

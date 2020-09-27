@@ -1,0 +1,31 @@
+.button,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: 0;
+	border-radius: 5px;
+	background: $color__background-button;
+	color: $white;
+	line-height: 1;
+	padding: 12px;
+	display: inline-block;
+	cursor: pointer;
+
+	&:hover {
+		border-color: $color__border-button-hover;
+	}
+
+	&:active,
+	&:focus {
+		border-color: $color__border-button-focus;
+	}
+
+	&.orange {
+		background: $orange;
+	}
+
+	&.blue {
+		background: $blue;
+	}
+}
