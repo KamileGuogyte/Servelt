@@ -67,12 +67,28 @@
 
     &--aside {
         display: flex;
+        margin: 0;
 
         .site-aside {
             width: 17%;
+            overflow-y: scroll;
+
+            &__block {
+                padding: 20px;
+                border-bottom: 1px solid $lightgray;
+            }
+
+            .radio {
+                margin-bottom: 20px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
         }
 
         .page-content {
+            display: block;
             width: 83%;
         }
     }

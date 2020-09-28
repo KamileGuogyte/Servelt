@@ -107,6 +107,14 @@ textarea {
 				height: 22px;
 			}
 		}
+
+		&--briefcase {
+			&:before {
+				background-image: url('img/icons/briefcase.svg');
+				width: 23px;
+				height: 22px;
+			}
+		}
 	}
 }
 
@@ -159,6 +167,104 @@ textarea {
 	}
 
 	input[type="checkbox"] {
+
+		// display: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		// visibility: hidden;
+
+		&:checked {
+			~label {
+				// color: $green;
+
+				&:before {
+					background-color: $darkblue;
+					// border-color: $green;
+				}
+
+				&:after {
+					opacity: 1;
+				}
+			}
+		}
+
+		&:disabled {
+			~label {
+				color: $darkblue;
+				cursor: not-allowed;
+
+				&:before {
+					border-color: $darkblue;
+				}
+			}
+
+			&:checked {
+				~label {
+					// color: $green;
+
+					&:before {
+						// border-color: $green;
+					}
+
+					&:after {
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+}
+
+.radio {
+	position: relative;
+	display: block;
+
+	label {
+		position: relative;
+		display: block;
+		font-size: 14px;
+		transition: color 0.2s ease-in-out;
+		cursor: pointer;
+		color: $darkblue;
+		padding-left: 30px;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 1px;
+			left: 0;
+			border: 1px solid $darkblue;
+			width: 20px;
+			height: 20px;
+			margin-right: 10px;
+			transition: border-color 0.2s ease-in-out, background 0.2s ease-in-out;
+			border-radius: 50%;
+			z-index: 1;
+		}
+
+		&:after {
+			content: '';
+			position: absolute;
+			top: 5px;
+			left: 4px;
+			display: inline-block;
+			width: 12px;
+			height: 12px;
+			// background-color: $darkblue;
+			background-image: url('img/icons/check.svg');
+			background-size: 100%;
+			background-position: center;
+			background-repeat: no-repeat;
+			opacity: 0;
+			transition: opacity 0.2s ease-in-out;
+			z-index: 2;
+		}
+
+	}
+
+	input[type="radio"] {
 
 		// display: none;
 		position: absolute;

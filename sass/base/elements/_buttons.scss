@@ -28,4 +28,17 @@ input[type="submit"] {
 	&.blue {
 		background: $blue;
 	}
+
+	&.gray {
+		border: 1px solid $gray;
+		color: $gray;
+
+		&.transparent {
+			background: transparent;
+		}
+	}
+
+	&.small {
+		padding: 10px 15px;
+	}
 }

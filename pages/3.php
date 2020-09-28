@@ -1,5 +1,11 @@
 <?php require_once('header.php'); ?>
 
+<section class="breadcrumbs">
+    <a href="#" class="breadcrumbs__change">Pakeisti</a>
+    <span class="breadcrumbs__location">Grožio salonai | Vilnius</span>
+    <button class="breadcrumbs__cart"></button>
+</section>
+
 <main class="site-main container">
     <section class="page-content">
         <div class="page-content__wrapper">

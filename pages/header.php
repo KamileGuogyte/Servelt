@@ -24,9 +24,3 @@
             <li class="site-header__item site-header__item--search"><a href="#"></a></li>
         </ul>
     </header>
-
-    <section class="breadcrumbs">
-        <a href="#" class="breadcrumbs__change">Pakeisti</a>
-        <span class="breadcrumbs__location">Grožio salonai | Vilnius</span>
-        <button class="breadcrumbs__cart"></button>
-    </section>
