@@ -1,5 +1,7 @@
+$darkdarkblue: #282e4b;
 $darkblue: #101b51;
 $blue: #4a68ad;
+$cyan: #5999b4;
 $lightblue: #94bbcd;
 $orange: #ff9954;
 $red: #e54651;
@@ -15,7 +17,7 @@ $color__background-button: $orange;
 $color__background-pre: #eee;
 $color__background-ins: #fff9c0;
 
-$color__text-screen: #21759b;
+$color__text-screen: $darkblue;
 $color__text-input: $darkblue;
 $color__text-input-focus: #111;
 $color__link: $darkblue; //royalblue

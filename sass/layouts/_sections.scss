@@ -27,8 +27,18 @@ section {
             }
 
             &__cart {
+                position: relative;
                 padding: 0;
                 background: transparent;
+
+                span {
+                    position: absolute;
+                    bottom: -5px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    font-size: 14px;
+                    color: $orange;
+                }
 
                 &:before {
                     content: '';

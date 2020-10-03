@@ -17,6 +17,7 @@ section.specialists {
         &__nav {
             display: flex;
             align-items: center;
+            position: relative;
 
             &-button {
                 background: transparent;
@@ -40,7 +41,20 @@ section.specialists {
                 }
             }
 
+            &-input {
+                width: 0;
+                height: 0;
+                padding: 0;
+                border: 0;
+                visibility: hidden;
+                position: absolute;
+                bottom: -40px;
+                left: 0;
+            }
+
             &-current {
+                cursor: pointer;
+                font-family: 'Sen', sans-serif;
                 font-size: 1.875em;
                 margin: 0 40px;
 
@@ -60,6 +74,31 @@ section.specialists {
 
         &__search {
             margin-bottom: 80px;
+
+            &:before {
+                left: 30px;
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                right: 30px;
+                top: 50%;
+                transform: translateY(-50%);
+                display: block;
+                width: 15px;
+                height: 9px;
+                background-size: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-image: url('img/icons/angle-down.svg');
+            }
+
+            input {
+                padding-left: 80px;
+                padding-right: 80px;
+                border-width: 2px;
+            }
         }
 
         &__block {
@@ -77,8 +116,8 @@ section.specialists {
 
             &-photo {
                 position: relative;
-                width: 180px;
-                height: 180px;
+                width: 175px;
+                height: 175px;
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -88,9 +127,11 @@ section.specialists {
             }
 
             &-info {
+                width: 51.28%;
                 // width: 23.5%;
 
                 h2 {
+                    word-spacing: 999999px;
                     margin: 0;
                 }
 
@@ -102,6 +143,10 @@ section.specialists {
                 p {
                     margin: 0;
                     font-size: 14px;
+                }
+
+                a {
+                    text-decoration: underline;
                 }
             }
 
@@ -224,6 +269,7 @@ section.specialists {
             }
 
             &-recommend {
+                font-family: 'Sen', sans-serif;
                 width: 100%;
                 margin: 30px 0 10px 0;
             }
@@ -235,7 +281,7 @@ section.specialists {
                 width: 100%;
                 border-radius: 5px;
                 background: #f4f4f6;
-                padding: 20px;
+                padding: 14px 20px;
 
                 &-info {
                     h4 {
