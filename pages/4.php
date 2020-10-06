@@ -4,6 +4,9 @@
 <main class="site-main site-main--aside">
     <aside class="site-aside">
         <div class="site-aside__blocks">
+            <div class="site-aside__block site-aside__block--logo site-aside__block--padding">
+                <img src="../img/logo-sidebar.svg" />
+            </div>
             <div class="site-aside__block site-aside__block--city site-aside__block--padding">
                 <select>
                     <option>Vilnius</option>

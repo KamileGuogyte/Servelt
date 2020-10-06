@@ -110,6 +110,8 @@ section.specialists {
 
             &-top {
                 display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
             }
 
             &-person {
@@ -120,8 +122,8 @@ section.specialists {
 
             &-photo {
                 position: relative;
-                width: 175px;
-                height: 175px;
+                width: 176px;
+                height: 176px;
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;

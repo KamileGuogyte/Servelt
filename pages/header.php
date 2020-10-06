@@ -17,7 +17,7 @@
         <input type="text" name="search" placeholder="Paieška" />
         <button type="button" class="search-panel__close"></button>
     </form>
-    <header class="site-header">
+    <header class="site-header site-header--show">
         <img src="../img/logo.svg" class="site-header__logo" />
         <ul class="site-header__menu">
             <li class="site-header__item site-header__item--active"><a href="#">Specialistai</a></li>
