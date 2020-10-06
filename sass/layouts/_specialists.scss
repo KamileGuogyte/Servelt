@@ -108,6 +108,10 @@ section.specialists {
             padding: 40px 0;
             border-top: 1px solid $lightgray;
 
+            &-top {
+                display: flex;
+            }
+
             &-person {
                 display: flex;
                 // width: 47%;
@@ -213,7 +217,8 @@ section.specialists {
             }
 
             &-calendar {
-                width: 42.35%;
+                width: 355px;
+                margin: 0;
 
                 thead {}
 

@@ -13,6 +13,10 @@
 </head>
 <body>
 <div id="page">
+    <form class="search-panel">
+        <input type="text" name="search" placeholder="Paieška" />
+        <button type="button" class="search-panel__close"></button>
+    </form>
     <header class="site-header">
         <img src="../img/logo.svg" class="site-header__logo" />
         <ul class="site-header__menu">

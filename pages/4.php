@@ -163,46 +163,48 @@
             <div class="specialists__list">
                 <?php for($y=0;$y<5;$y++) { ?>
                     <div class="specialists__block">
-                        <div class="specialists__block-person">
-                            <div class="specialists__block-photo" style="background-image: url('http://placehold.it/180x180')">
-                                <?php if($y!==1) { ?><div class="specialists__block-like-status"></div><?php } ?>
-                            </div>                    
-                            <div class="specialists__block-info">
-                                <h2>Ramunė Varnaliauskienė</h2>
-                                <span>Dermatologė</span>
-                                <p>Klinika “Lazerinė praktika”<br/>
-                                <a href="#">M. Valančiaus g. 23</a><br/></p>
-                                <div class="specialists__block-distance"><b>15 min</b> (5,6 km) Kaunas</div>
-                                <button class="button small orange specialists__block-more">Plačiau</button>
-                <button class="button small gray transparent specialists__block-like <?php if($y===1) { ?>specialists__block-like--active<?php } ?>">Mano</button>
+                        <div class="specialists__block-top">
+                            <div class="specialists__block-person">
+                                <div class="specialists__block-photo" style="background-image: url('http://placehold.it/180x180')">
+                                    <?php if($y!==1) { ?><div class="specialists__block-like-status"></div><?php } ?>
+                                </div>                    
+                                <div class="specialists__block-info">
+                                    <h2>Ramunė Varnaliauskienė</h2>
+                                    <span>Dermatologė</span>
+                                    <p>Klinika “Lazerinė praktika”<br/>
+                                    <a href="#">M. Valančiaus g. 23</a><br/></p>
+                                    <div class="specialists__block-distance"><b>15 min</b> (5,6 km) Kaunas</div>
+                                    <button class="button small orange specialists__block-more">Plačiau</button>
+                    <button class="button small gray transparent specialists__block-like <?php if($y===1) { ?>specialists__block-like--active<?php } ?>">Mano</button>
+                                </div>
                             </div>
+                            <table class="specialists__block-calendar">
+                                <thead>
+                                    <tr>
+                                        <th class="active">Pr<small>Sau10</small></th>
+                                        <th>Pr<small>Sau10</small></th>
+                                        <th>Pr<small>Sau10</small></th>
+                                        <th>Pr<small>Sau10</small></th>
+                                        <th>Pr<small>Sau10</small></th>
+                                        <th>Pr<small>Sau10</small></th>
+                                        <th>Pr<small>Sau10</small></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php for($i=0;$i<4;$i++) { ?>
+                                    <tr>
+                                        <td><p>09:15</p></td>
+                                        <td><p></p></td>
+                                        <td><p class="active">09:15</p></td>
+                                        <td><p>09:15</p></td>
+                                        <td><p>09:15</p></td>
+                                        <td><p>09:15</p></td>
+                                        <td><p>09:15</p></td>
+                                    </tr>
+                                    <?php } ?>
+                                </tbody>
+                            </table>
                         </div>
-                        <table class="specialists__block-calendar">
-                            <thead>
-                                <tr>
-                                    <th class="active">Pr<small>Sau10</small></th>
-                                    <th>Pr<small>Sau10</small></th>
-                                    <th>Pr<small>Sau10</small></th>
-                                    <th>Pr<small>Sau10</small></th>
-                                    <th>Pr<small>Sau10</small></th>
-                                    <th>Pr<small>Sau10</small></th>
-                                    <th>Pr<small>Sau10</small></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <?php for($i=0;$i<4;$i++) { ?>
-                                <tr>
-                                    <td><p>09:15</p></td>
-                                    <td><p></p></td>
-                                    <td><p class="active">09:15</p></td>
-                                    <td><p>09:15</p></td>
-                                    <td><p>09:15</p></td>
-                                    <td><p>09:15</p></td>
-                                    <td><p>09:15</p></td>
-                                </tr>
-                                <?php } ?>
-                            </tbody>
-                        </table>
                         <h3 class="specialists__block-recommend">Specialistas Jums rekomenduoja užsiregistruoti šiai procedūrai</h3>
                         <div class="specialists__block-action">                        
                             <div class="specialists__block-action-info">
