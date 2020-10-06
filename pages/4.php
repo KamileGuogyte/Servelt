@@ -178,7 +178,6 @@
                                     <a href="#">M. Valančiaus g. 23</a><br/></p>"
                                     <div class="product__block-distance"><b>15 min</b> (5,6 km) Kaunas</div>
                                     
-                                    <div class="product__block
                                     <button class="button small orange product__block-more">Plačiau</button>
                                     <button class="button small gray transparent product__block-like <?php if($y===1) { ?>product__block-like--active<?php } ?>">Mano</button>
                                 </div>
