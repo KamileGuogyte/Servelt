@@ -150,38 +150,40 @@
             <span class="breadcrumbs__location">GROŽIO SALONAI</span>
             <button class="breadcrumbs__cart"><span>2</span></button>
         </section>
-        <section class="specialists">
-            <div class="specialists__header">
+        <section class="product">
+            <div class="product__header">
                 <h1 class="title">Registruokis</h1>
-                <div class="specialists__nav">
-                    <input type="text" name="date" class="specialists__nav-input" />
-                    <button class="specialists__nav-button specialists__nav-button--prev"></button>
-                    <div class="specialists__nav-current">2021 Sausio 10</div>
-                    <button class="specialists__nav-button specialists__nav-button--next"></button>
+                <div class="product__nav">
+                    <input type="text" name="date" class="product__nav-input" />
+                    <button class="product__nav-button product__nav-button--prev"></button>
+                    <div class="product__nav-current">2021 Sausio 10</div>
+                    <button class="product__nav-button product__nav-button--next"></button>
                 </div>
             </div>
-            <div class="specialists__search input-wrapper input-wrapper--briefcase">
+            <div class="product__search input-wrapper input-wrapper--briefcase">
                 <input type="text" name="search" placeholder="Įveskite kelis paslaugos pavadinimo simbolius paieškai" />
             </div>
-            <div class="specialists__list">
+            <div class="product__list">
                 <?php for($y=0;$y<5;$y++) { ?>
-                    <div class="specialists__block">
-                        <div class="specialists__block-top">
-                            <div class="specialists__block-person">
-                                <div class="specialists__block-photo" style="background-image: url('http://placehold.it/180x180')">
-                                    <?php if($y!==1) { ?><div class="specialists__block-like-status"></div><?php } ?>
+                    <div class="product__block">
+                        <div class="product__block-top">
+                            <div class="product__block-person">
+                                <div class="product__block-photo" style="background-image: url('http://placehold.it/180x180')">
+                                    <?php if($y!==1) { ?><div class="product__block-like-status"></div><?php } ?>
                                 </div>                    
-                                <div class="specialists__block-info">
+                                <div class="product__block-info">
                                     <h2>Ramunė Varnaliauskienė</h2>
                                     <span>Dermatologė</span>
                                     <p>Klinika “Lazerinė praktika”<br/>
-                                    <a href="#">M. Valančiaus g. 23</a><br/></p>
-                                    <div class="specialists__block-distance"><b>15 min</b> (5,6 km) Kaunas</div>
-                                    <button class="button small orange specialists__block-more">Plačiau</button>
-                    <button class="button small gray transparent specialists__block-like <?php if($y===1) { ?>specialists__block-like--active<?php } ?>">Mano</button>
+                                    <a href="#">M. Valančiaus g. 23</a><br/></p>"
+                                    <div class="product__block-distance"><b>15 min</b> (5,6 km) Kaunas</div>
+                                    
+                                    <div class="product__block
+                                    <button class="button small orange product__block-more">Plačiau</button>
+                                    <button class="button small gray transparent product__block-like <?php if($y===1) { ?>product__block-like--active<?php } ?>">Mano</button>
                                 </div>
                             </div>
-                            <table class="specialists__block-calendar">
+                            <table class="calendar">
                                 <thead>
                                     <tr>
                                         <th class="active">Pr<small>Sau10</small></th>
@@ -208,17 +210,38 @@
                                 </tbody>
                             </table>
                         </div>
-                        <h3 class="specialists__block-recommend">Specialistas Jums rekomenduoja užsiregistruoti šiai procedūrai</h3>
-                        <div class="specialists__block-action">                        
-                            <div class="specialists__block-action-info">
+                        <h3 class="product__block-recommend">Specialistas Jums rekomenduoja užsiregistruoti šiai procedūrai</h3>
+                        <div class="product__block-action">                        
+                            <div class="product__block-action-info">
                                 <h4>Greitasis odos atjauninimas lazeriu</h4>    
-                                <div class="specialists__block-action-duration">1 val</div>
-                                <div class="specialists__block-action-price">45€<strike>60€</strike></div>
+                                <div class="product__block-action-duration">1 val</div>
+                                <div class="product__block-action-price">45€<strike>60€</strike></div>
                             </div>
-                            <button class="button cyan transparent small specialists__block-action-order">Užsakyti</button>
+                            <button class="button cyan transparent small product__block-action-order">Užsakyti</button>
                         </div>
                     </div>
                 <?php } ?>
+
+                <div class="pagination">
+                    <div class="pagination__list">
+                        <a href="#" class="pagination__button pagination__button--first"></a>
+                        <a href="#" class="pagination__button pagination__button--prev"></a>
+
+                        <a href="#" class="pagination__button">1</a>
+                        <a href="#" class="pagination__button">2</a>
+                        <a href="#" class="pagination__button">3</a>
+                        <a href="#" class="pagination__button">4</a>
+                        <a href="#" class="pagination__button">...</a>
+                        <a href="#" class="pagination__button">10</a>
+                        <a href="#" class="pagination__button">12</a>
+
+                        <a href="#" class="pagination__button pagination__button--next"></a>
+                        <a href="#" class="pagination__button pagination__button--last"></a>
+                    </div>
+                    <div class="pagination__info">
+                        Rodomos eilutės nuo <b>1 - 22</b>  iš  <b>9678</b>  |  Viso puslapių  <b>999</b>  
+                    </div>
+                </div>
             </div>
         </section>
         <?php require_once('footer-menu.php'); ?>

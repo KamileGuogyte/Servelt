@@ -1,8 +1,8 @@
-section.specialists {
-    margin: 60px 25% 60px 7.1%;
+section.product {
+    margin: 60px 25% 30px 7.1%;
     width: 850px;
 
-    .specialists {
+    .product {
 
         &__header {
             display: flex;
@@ -196,7 +196,7 @@ section.specialists {
                     }
                 }
 
-                &.specialists__block-like--active {
+                &.product__block-like--active {
                     border-color: $red;
                     color: $red;
 
@@ -216,63 +216,6 @@ section.specialists {
                     background-image: url('img/icons/unheart-gray.svg');
                     margin-right: 5px;
                     display: block;
-                }
-            }
-
-            &-calendar {
-                width: 355px;
-                margin: 0;
-
-                thead {}
-
-                th {
-                    text-align: left;
-                    font-weight: 600;
-                    padding-bottom: 5px;
-                    border-bottom: 2px solid #f7f7f8;
-
-                    &.active {
-                        border-bottom-color: #e9636c;
-                    }
-                }
-
-                small {
-                    font-weight: 300;
-                    display: block;
-                    font-size: 12px;
-                }
-
-                tbody {}
-
-                td {
-                    padding: 4px 8px 4px 0;
-
-                    &:nth-child(7n) {
-                        padding-right: 0;
-                    }
-                }
-
-                p {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    text-align: center;
-                    background: $darkblue;
-                    color: $white;
-                    font-size: 12px;
-                    margin: 0;
-                    border-radius: 2px;
-                    width: 44px;
-                    height: 28px;
-
-                    &:empty {
-                        background: #ecedef;
-                    }
-
-                    &.active {
-                        color: $darkblue;
-                        background: $orange;
-                    }
                 }
             }
 

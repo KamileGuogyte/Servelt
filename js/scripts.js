@@ -15,17 +15,17 @@ $(document).ready(function () {
     //         $(this).trigger('change');
     //     }
     // })
-    $(".specialists__nav-input").datepicker({
+    $(".product__nav-input").datepicker({
         showButtonPanel: true,
         buttonText: 'Pasirinkti',
         minDate: '+1',
         defaultDate: '+1'
     });
 
-    $('.specialists__nav-current').click(function () {
-        $(".specialists__nav-input").datepicker('show');
+    $('.product__nav-current').click(function () {
+        $(".product__nav-input").datepicker('show');
     })
-    // $(".specialists__nav-input").datepicker('show');
+    // $(".product__nav-input").datepicker('show');
 })
 
 

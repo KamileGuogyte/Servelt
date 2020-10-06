@@ -1,0 +1,64 @@
+.pagination {
+    width: 100%;
+    padding-top: 32px;
+    border-top: 1px solid $lightgray;
+    display: flex;
+
+    .pagination {
+        &__list {
+            display: flex;
+            align-items: center;
+            margin: 0 -15px;
+        }
+
+        &__button {
+            margin: 0 15px;
+
+            &:before {
+                content: '';
+                display: inline-block;
+                background-size: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            &--first {
+                &:before {
+                    background-image: url('img/icons/double-angle-left.svg');
+                    width: 13.5px;
+                    height: 12px;
+                }
+            }
+
+            &--prev {
+                &:before {
+                    background-image: url('img/icons/angle-left.svg');
+                    width: 8px;
+                    height: 15px;
+                }
+            }
+
+            &--next {
+                &:before {
+                    background-image: url('img/icons/angle-left.svg');
+                    width: 8px;
+                    height: 15px;
+                    transform: scale(-1, 1);
+                }
+            }
+
+            &--last {
+                &:before {
+                    background-image: url('img/icons/double-angle-left.svg');
+                    width: 13.5px;
+                    height: 12px;
+                    transform: scale(-1, 1);
+                }
+            }
+        }
+
+        &__info {
+            margin-left: auto;
+        }
+    }
+}
