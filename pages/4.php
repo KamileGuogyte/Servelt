@@ -3,10 +3,10 @@
 
 <main class="site-main site-main--aside">
     <aside class="site-aside">
+        <div class="site-aside__block site-aside__block--logo site-aside__block--padding">
+            <img src="../img/logo-sidebar.svg" />
+        </div>
         <div class="site-aside__blocks">
-            <div class="site-aside__block site-aside__block--logo site-aside__block--padding">
-                <img src="../img/logo-sidebar.svg" />
-            </div>
             <div class="site-aside__block site-aside__block--city site-aside__block--padding">
                 <select>
                     <option>Vilnius</option>
@@ -185,12 +185,12 @@
                                 <thead>
                                     <tr>
                                         <th class="active">Pr<small>Sau10</small></th>
-                                        <th>Pr<small>Sau10</small></th>
-                                        <th>Pr<small>Sau10</small></th>
-                                        <th>Pr<small>Sau10</small></th>
-                                        <th>Pr<small>Sau10</small></th>
-                                        <th>Pr<small>Sau10</small></th>
-                                        <th>Pr<small>Sau10</small></th>
+                                        <th>An<small>Sau10</small></th>
+                                        <th>Tr<small>Sau10</small></th>
+                                        <th>Kt<small>Sau10</small></th>
+                                        <th>Pn<small>Sau10</small></th>
+                                        <th>Še<small>Sau10</small></th>
+                                        <th>Se<small>Sau10</small></th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -215,7 +215,7 @@
                                 <div class="specialists__block-action-duration">1 val</div>
                                 <div class="specialists__block-action-price">45€<strike>60€</strike></div>
                             </div>
-                            <button class="button cyan transparent specialists__block-action-order">Užsakyti</button>
+                            <button class="button cyan transparent small specialists__block-action-order">Užsakyti</button>
                         </div>
                     </div>
                 <?php } ?>

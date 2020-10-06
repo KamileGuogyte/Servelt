@@ -8,7 +8,13 @@ $(document).ready(function () {
     $('.site-header .site-header__item--search, .search-panel__close').click(function () {
         $('.search-panel').toggleClass('search-panel--toggled');
     })
-
+    // $('.site-aside input[type="radio"]').on('click', function () {
+    //     if ($(this).prop('checked') === true) {
+    //         console.log('asd');
+    //         $(this).prop('checked', false);
+    //         $(this).trigger('change');
+    //     }
+    // })
     $(".specialists__nav-input").datepicker({
         showButtonPanel: true,
         buttonText: 'Pasirinkti',

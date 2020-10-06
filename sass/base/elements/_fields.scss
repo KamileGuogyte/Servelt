@@ -20,9 +20,30 @@ textarea {
 	padding: 10px;
 	background: $white;
 	width: 100%;
+	outline-color: $gray;
 
 	&:focus {
 		color: $color__text-input-focus;
+	}
+
+	&::-webkit-input-placeholder {
+		/* Chrome/Opera/Safari */
+		color: $gray;
+	}
+
+	&::-moz-placeholder {
+		/* Firefox 19+ */
+		color: $gray;
+	}
+
+	&:-ms-input-placeholder {
+		/* IE 10+ */
+		color: $gray;
+	}
+
+	&:-moz-placeholder {
+		/* Firefox 18- */
+		color: $gray;
 	}
 }
 
@@ -135,21 +156,21 @@ textarea {
 		&:before {
 			content: '';
 			position: absolute;
-			top: 2px;
+			top: 0;
 			left: 0;
 			border: 1px solid $darkblue;
 			width: 16px;
 			height: 16px;
 			margin-right: 10px;
 			transition: border-color 0.2s ease-in-out, background 0.2s ease-in-out;
-			border-radius: 5px;
+			border-radius: 50%;
 			z-index: 1;
 		}
 
 		&:after {
 			content: '';
 			position: absolute;
-			top: 5px;
+			top: 3px;
 			left: 3px;
 			display: inline-block;
 			width: 10px;
@@ -233,7 +254,7 @@ textarea {
 		&:before {
 			content: '';
 			position: absolute;
-			top: 2px;
+			top: 0;
 			left: 0;
 			border: 1px solid $darkblue;
 			width: 16px;
@@ -247,7 +268,7 @@ textarea {
 		&:after {
 			content: '';
 			position: absolute;
-			top: 6px;
+			top: 4px;
 			left: 4px;
 			display: inline-block;
 			width: 8px;
@@ -327,11 +348,11 @@ textarea {
 			font-size: 16px;
 
 			&:before {
-				top: 3px;
+				top: 1px;
 			}
 
 			&:after {
-				top: 6px;
+				top: 4px;
 			}
 		}
 	}

@@ -99,8 +99,12 @@ body {
             left: 0;
             height: calc(100vh);
             color: $darkdarkblue;
-            width: 275px;
-            overflow-y: scroll;
+            width: 280px;
+
+            &__blocks {
+                height: calc(100vh - 70px);
+                overflow-y: scroll;
+            }
 
             &__block {
                 position: relative;
@@ -120,8 +124,8 @@ body {
                 }
 
                 &--padding {
-                    padding-left: 20px;
-                    padding-right: 20px;
+                    padding-left: 15px;
+                    padding-right: 15px;
                 }
 
                 &--city {
@@ -150,15 +154,17 @@ body {
             }
 
             .title {
+                margin-bottom: 10px;
+
                 &--padding {
-                    padding-left: 20px;
-                    padding-right: 20px;
+                    padding-left: 15px;
+                    padding-right: 15px;
                 }
             }
 
             .radio,
             .checkbox {
-                padding: 10px 20px;
+                padding: 10px 15px;
                 transition: background 0.2s ease-in-out;
 
                 &:hover,
@@ -167,21 +173,9 @@ body {
                     font-weight: 500;
                 }
 
-                // &:before {
-                //     content: '';
-                //     position: absolute;
-                //     top: 0;
-                //     left: 0;
-                //     width: 100%;
-                //     height: 100%;
-                //     opacity: 0;                    
-                // }
-
-                margin-bottom: 10px;
-
                 &:last-child {
                     margin-bottom: 0;
-                    padding-bottom: 0;
+                    // padding-bottom: 0;
                 }
             }
         }
@@ -189,7 +183,7 @@ body {
         .page-content {
             flex: 1;
             display: block;
-            margin-left: 275px;
+            margin-left: 280px;
             // height: 100%;
             // overflow-y: scroll;
         }
@@ -268,7 +262,7 @@ body {
 
             li {
                 display: inline-block;
-                margin: 0 15px;
+                margin: 0 8px;
 
                 &:last-child {
                     margin-right: 0;
@@ -284,6 +278,7 @@ body {
                     width: 30px;
                     height: 30px;
                     color: $white;
+                    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.23);
                 }
             }
         }
@@ -308,6 +303,7 @@ body {
         font-size: 24px;
         border: 0;
         border-radius: 0;
+        outline: none;
     }
 
     .search-panel {

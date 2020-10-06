@@ -1,5 +1,6 @@
 section.specialists {
-    padding: 80px 25% 80px 7.1%;
+    margin: 60px 25% 60px 7.1%;
+    width: 850px;
 
     .specialists {
 
@@ -73,7 +74,7 @@ section.specialists {
         }
 
         &__search {
-            margin-bottom: 80px;
+            margin-bottom: 40px;
 
             &:before {
                 left: 30px;
@@ -244,7 +245,7 @@ section.specialists {
                 tbody {}
 
                 td {
-                    padding: 10px 10px 10px 0;
+                    padding: 4px 8px 4px 0;
 
                     &:nth-child(7n) {
                         padding-right: 0;
@@ -278,7 +279,7 @@ section.specialists {
             &-recommend {
                 font-family: 'Sen', sans-serif;
                 width: 100%;
-                margin: 30px 0 10px 0;
+                margin: 20px 0 10px 0;
             }
 
             &-action {
