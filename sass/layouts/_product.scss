@@ -257,7 +257,7 @@ section.product {
                 }
 
                 &-duration {
-                    margin-right: 60px;
+                    margin-right: 20px;
 
                     &:before {
                         width: 13px;
@@ -282,4 +282,15 @@ section.product {
             }
         }
     }
+}
+
+#test {
+    position: fixed;
+    top: 100px;
+    left: 100px;
+    background: #fff;
+    padding: 10px;
+    font-size: 1.5em;
+    z-index: 10;
+    display: none;
 }

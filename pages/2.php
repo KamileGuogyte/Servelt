@@ -1,6 +1,11 @@
 <?php require_once('header.php'); ?>
-
-<main class="site-main container">
+ 
+<section class="breadcrumbs">
+        <a href="#" class="breadcrumbs__change">Pakeisti</a>
+        <span class="breadcrumbs__location">Grožio salonai</span>
+        <button class="breadcrumbs__cart"></button>
+    </section>
+<main class="site-main container">   
     <section class="login">
         <h1 class="title">Prisijungti</h1>
         <div class="login__blocks">
@@ -38,15 +43,15 @@
                     </div>
                     <label class="login__passwords">Slaptaždis, ne mažiau 8 simbolių.</label>
                     <div class="input-wrapper input-wrapper--half input-wrapper--lock">
-                        <input type="password" name="password" placeholder="" />
+                        <input type="password" name="password" placeholder="Slaptažodis" />
                     </div>
                     <div class="input-wrapper input-wrapper--half input-wrapper--lock">
-                        <input type="password" name="password2" placeholder="" />
+                        <input type="password" name="password2" placeholder="Pakartokite slaptažodį" />
                     </div>
                     <div class="login__checkboxes">
                         <div class="checkbox">
                             <input name="privacy_policy" type="checkbox" id="privacy_policy" class="" value="1" required />
-                            <label for="privacy_policy">Patvirtinu, kad susipažinau su Privatumo politika ir sutinku, kad mano asmens duomenys būtų naudojami joje numatytais duomenų tvarkymo tikslais ir sąlygomis.</label>
+                            <label for="privacy_policy">Patvirtinu, kad susipažinau su <a href="#">Privatumo politika</a> ir sutinku, kad mano asmens duomenys būtų naudojami joje numatytais duomenų tvarkymo tikslais ir sąlygomis.</label>
                         </div>
                         <div class="checkbox">
                             <input name="newsletter" type="checkbox" id="newsletter" class="" value="1" required />

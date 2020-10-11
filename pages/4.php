@@ -161,7 +161,7 @@
                 </div>
             </div>
             <div class="product__search input-wrapper input-wrapper--briefcase">
-                <input type="text" name="search" placeholder="Įveskite kelis paslaugos pavadinimo simbolius paieškai" />
+                <input type="text" name="search" id="search" placeholder="Įveskite kelis paslaugos pavadinimo simbolius paieškai" />
             </div>
             <div class="product__list">
                 <?php for($y=0;$y<5;$y++) { ?>
@@ -169,17 +169,17 @@
                         <div class="product__block-top">
                             <div class="product__block-person">
                                 <div class="product__block-photo" style="background-image: url('http://placehold.it/180x180')">
-                                    <?php if($y!==1) { ?><div class="product__block-like-status"></div><?php } ?>
+                                    <?php if($y===1) { ?><div class="product__block-like-status"></div><?php } ?>
                                 </div>                    
                                 <div class="product__block-info">
                                     <h2>Ramunė Varnaliauskienė</h2>
                                     <span>Dermatologė</span>
                                     <p>Klinika “Lazerinė praktika”<br/>
-                                    <a href="#">M. Valančiaus g. 23</a><br/></p>"
+                                    <a href="#">M. Valančiaus g. 23</a><br/></p>
                                     <div class="product__block-distance"><b>15 min</b> (5,6 km) Kaunas</div>
                                     
                                     <button class="button small orange product__block-more">Plačiau</button>
-                                    <button class="button small gray transparent product__block-like <?php if($y===1) { ?>product__block-like--active<?php } ?>">Mano</button>
+                                    <button class="button small gray transparent product__block-like <?php if($y!==1) { ?>product__block-like--active<?php } ?>">Mano</button>
                                 </div>
                             </div>
                             <table class="calendar">
@@ -209,6 +209,7 @@
                                 </tbody>
                             </table>
                         </div>
+                        <?php if($y === 0) { ?>
                         <h3 class="product__block-recommend">Specialistas Jums rekomenduoja užsiregistruoti šiai procedūrai</h3>
                         <div class="product__block-action">                        
                             <div class="product__block-action-info">
@@ -218,6 +219,7 @@
                             </div>
                             <button class="button cyan transparent small product__block-action-order">Užsakyti</button>
                         </div>
+                        <?php } ?>
                     </div>
                 <?php } ?>
 
@@ -246,5 +248,5 @@
         <?php require_once('footer-menu.php'); ?>
     </div>
 </main>
-
+<div id="test"></div>
 <?php require_once('footer.php'); ?>

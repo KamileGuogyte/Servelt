@@ -1,5 +1,9 @@
 section {
     &.login {
+        width: 1040px;
+
+        margin: 0 auto;
+
         .login {
             &__blocks {
                 display: flex;
@@ -9,8 +13,8 @@ section {
 
             &__block {
                 border-radius: 5px;
-                border: 1px solid $lightgray;
-                width: 43.85%;
+                background: #f7f6f6;
+                width: 48%;
                 padding: 20px;
 
                 &--register {
@@ -46,6 +50,11 @@ section {
                     &:last-child {
                         margin-bottom: 0;
                     }
+                }
+
+                a {
+                    font-weight: 600;
+                    text-decoration: underline;
                 }
             }
 
