@@ -42,16 +42,14 @@ body {
         }
 
         &__menu {
+            margin: 0 -15px 0 auto;
+            padding: 0;
+            list-style: none;
+
             a {
                 padding: 21px 0;
                 color: $white;
             }
-        }
-
-        &__menu {
-            margin: 0 -15px 0 auto;
-            padding: 0;
-            list-style: none;
         }
 
         &__item {
@@ -84,9 +82,13 @@ body {
     }
 }
 
+.default-content {
+    padding-top: 70px;
+}
+
 .site-main {
     min-height: 500px;
-    margin: 60px auto;
+    margin: 70px auto;
 
     &--aside {
         height: calc(100vh - 70px);
@@ -184,12 +186,17 @@ body {
             flex: 1;
             display: block;
             margin-left: 280px;
+
+            &__wrapper {
+                width: 850px;
+                margin: 60px 25% 30px 7.1%;
+            }
+
             // height: 100%;
             // overflow-y: scroll;
         }
 
         .site-footer {
-            margin: 0 25% 0 7.1%;
             width: 850px;
 
             .site-footer {

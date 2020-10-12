@@ -43,10 +43,10 @@ $(document).ready(function () {
                 }
             });
         },
-        focus: function (event, ui) {
-            $("#project").val(ui.item.label);
-            return false;
-        },
+        // focus: function (event, ui) {
+        //     // $("#project").val(ui.item.label);
+        //     // return false;
+        // },
         select: function (event, ui) {
             console.log(ui);
             $("#project").val(ui.item.label);
@@ -56,13 +56,25 @@ $(document).ready(function () {
 
             return false;
         }
+    }).focus(function () {
+        // The following works only once.
+        // $(this).trigger('keydown.autocomplete');
+        // As suggested by digitalPBK, works multiple times
+        // $(this).data("autocomplete").search($(this).val());
+        // As noted by Jonny in his answer, with newer versions use uiAutocomplete
+        $(this).data("uiAutocomplete").search($(this).val());
+    }).autocomplete("instance")._renderItem = function (ul, item) {
+        console.log(item);
+        return $("<li>")
+            .append("<div class='autocomplete-product'><span class='autocomplete-product-title'>" + item.title + "</span><span class='autocomplete-product-desc'>" + item.about + "</span><span class='autocomplete-product-duration'>" + item.duration + "</div>")
+            .appendTo(ul);
+    };
+    $('.venue__slider').slick({
+        arrows: true,
+        dots: false,
+        slidesToShow: 1,
+        // slides
     })
-        .autocomplete("instance")._renderItem = function (ul, item) {
-            console.log(item);
-            return $("<li>")
-                .append("<div>" + item.title + "<br>" + item.about + "</div>")
-                .appendTo(ul);
-        };
 })
 
 $.fn.customCalendar = function () {

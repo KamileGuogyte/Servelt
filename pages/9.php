@@ -9,7 +9,7 @@
             <span class="breadcrumbs__location">GROŽIO SALONAI</span>
             <button class="breadcrumbs__cart"><span>2</span></button>
         </section>
-        <div class="page-content__wrapper">
+        <div class="page-content__wrapper">            
             <section class="product">
                 <div class="product__header">
                     <h1 class="title">Registruokis</h1>
@@ -27,49 +27,30 @@
                     <?php for($y=0;$y<5;$y++) { ?>
                         <div class="product__block">
                             <div class="product__block-top">
-                                <div class="product__block-person">
-                                    <div class="product__block-photo" style="background-image: url('http://placehold.it/180x180')">
+                                <div class="product__block-company">
+                                    <div class="product__block-photo product__block-photo--rectangle" style="background-image: url('http://placehold.it/180x180')">
                                         <?php if($y===1) { ?><div class="product__block-like-status"></div><?php } ?>
                                     </div>                    
                                     <div class="product__block-info">
-                                        <h2>Ramunė Varnaliauskienė</h2>
-                                        <span>Dermatologė</span>
+                                        <h2>Grožio salonas Jos Kaprizai</h2>
                                         <p>Klinika “Lazerinė praktika”<br/>
-                                        <a href="#">M. Valančiaus g. 23</a><br/></p>
+                                        <a class="product__block-address" href="#">M. Valančiaus g. 23</a></p>
                                         <div class="product__block-distance"><b>15 min</b> (5,6 km) Kaunas</div>
-                                        
+                                        <a href="#" class="product__block-phone">+37060000000</a>
                                         <div class="product__block-info-actions">
-                                            <button class="button small orange product__block-more">Plačiau</button>
+                                            <button class="button small orange product__block-order">Užsakyti paslaugas</button>
                                             <button class="button small gray transparent product__block-like <?php if($y!==1) { ?>product__block-like--active<?php } ?>">Mano</button>
                                         </div>
                                     </div>
                                 </div>
-                                <table class="calendar">
-                                    <thead>
-                                        <tr>
-                                            <th class="active">Pr<small>Sau10</small></th>
-                                            <th>An<small>Sau10</small></th>
-                                            <th>Tr<small>Sau10</small></th>
-                                            <th>Kt<small>Sau10</small></th>
-                                            <th>Pn<small>Sau10</small></th>
-                                            <th>Še<small>Sau10</small></th>
-                                            <th>Se<small>Sau10</small></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <?php for($i=0;$i<4;$i++) { ?>
-                                        <tr>
-                                            <td><p>09:15</p></td>
-                                            <td><p></p></td>
-                                            <td><p class="active">09:15</p></td>
-                                            <td><p>09:15</p></td>
-                                            <td><p>09:15</p></td>
-                                            <td><p>09:15</p></td>
-                                            <td><p>09:15</p></td>
-                                        </tr>
-                                        <?php } ?>
-                                    </tbody>
-                                </table>
+                                <div class="work-hours">
+                                    <h3 class="work-hours__title">Darbo laikas</h3>
+                                    <ul>
+                                        <?php for($i=0;$i<7;$i++){ ?>
+                                        <li><span>Pirmadienis</span><span <?php if($i===0) { ?> class="work-hours__date--red"<?php } ?>>8:00 - 20:00</span></li>
+                                        <?php }?>
+                                    </ul>
+                                </div>
                             </div>
                             <?php if($y === 0) { ?>
                             <h3 class="product__block-recommend">Specialistas Jums rekomenduoja užsiregistruoti šiai procedūrai</h3>

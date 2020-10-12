@@ -1,7 +1,7 @@
 <?php require_once('header.php'); ?>
 
 
-<main class="site-main site-main--aside">
+<main class="site-main site-main--aside">    
     <?php require_once('product-sidebar.php'); ?>
     <div class="page-content">        
         <section class="breadcrumbs">
@@ -9,7 +9,28 @@
             <span class="breadcrumbs__location">GROŽIO SALONAI</span>
             <button class="breadcrumbs__cart"><span>2</span></button>
         </section>
-        <div class="page-content__wrapper">
+        
+        <div class="page-content__wrapper">            
+            <section class="venue">
+                <h1 class="title">Vasco by I.C.O.N.</h1>
+                <div class="venue__slider">
+                    <img src="http://placehold.it/830x300"/>
+                    <img src="http://placehold.it/830x300"/>
+                </div>
+                <div class="venue__info">
+                    <a href="#">Kalvarijų g. 125, Vilnius, 08221</a>
+                    <a href="#">+370 684 98756</a>
+                </div>
+                <div class="venue__description">
+                    <p>Visą gyvenimą domėjausi stiliumi ir mada, norėjau kurti ir savo kūryba džiuginti žmones. Mano močiutė ir mama buvo prijaučiančios šiai profesijai, todėl nuo pat mažų dienų atsirado potraukis kurti ir stilizuoti žmogaus išvaizda dirbant su plaukais. Būdamas abiturientas nusprendžiau studijuoti Vilniaus kolegijoje – šukuosenų dizaino specialybės, ir įgyti šukuosenų dizaino, bei, apskritai, bendro įvaizdžio stilisto aukštąjį išsilavinimą.Sėkmingai baigęs Vilniaus kolegiją toliau tobulinau žinias tiek Lietuvoje, tiek kaimyninėse šalyse. Dirbdamas supratau, kad forma, tekstūra ir faktūra turi didelę įtaką žmonių stiliuje ir kirpimai, dažymai yra kūryba bei menas, todėl į savo darbą žiūriu atsakingai ir jį atlieku labai kruopščiai. Mano darbas dėl šių priežasčių gali užtrukti ilgiau nei įprastai, bet man kokybė yra svarbesnė už kiekybę.</p>
+                    <button class="venue__description-more">Skaityti daugiau</button>
+                </div>
+                <div class="venue__footer">
+                    <a class="venue__work-hours" href="#">Šiuo metu dirba : 08:00 - 20:00</a>
+                    <a class="venue__deals" href="#">Yra paskutinės minutės pasiūlymai</a>
+                </div>
+            </section>
+
             <section class="product">
                 <div class="product__header">
                     <h1 class="title">Registruokis</h1>
@@ -108,7 +129,7 @@
                 </div>
             </section>
             <?php require_once('footer-menu.php'); ?>
-        </div>
+        </div>        
     </div>
 </main>
 <div id="test"></div>

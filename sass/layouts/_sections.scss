@@ -104,4 +104,13 @@ section {
             }
         }
     }
+
+    &.venue {
+        .venue {
+            &__slider {
+                padding: 10px;
+                border-top: 1px solid #eeeeee;
+            }
+        }
+    }
 }

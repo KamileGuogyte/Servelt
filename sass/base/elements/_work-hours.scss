@@ -1,0 +1,51 @@
+.work-hours {
+    width: 220px;
+
+    .work-hours {
+
+        &__title {
+            position: relative;
+            margin: 0 0 15px 0;
+
+            &:before {
+                position: absolute;
+                top: 50%;
+                left: -23px;
+                transform: translateY(-50%);
+                content: '';
+                width: 13px;
+                height: 13px;
+                background-image: url('img/icons/clock.svg');
+                background-size: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                display: inline-block;
+                // margin-right: 10px;
+            }
+        }
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 0;
+        border-bottom: 1px solid #eeeeee;
+        font-size: 0.875em;
+        font-weight: 500;
+
+        .work-hours__date--red {
+            color: $red;
+        }
+
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+}

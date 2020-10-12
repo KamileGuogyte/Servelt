@@ -128,9 +128,9 @@ a.ui-button:active,
 .ui-button:active,
 .ui-button.ui-state-active:hover {
 	border: 0;
-	background: $orange;
-	font-weight: 600;
-	color: $darkblue;
+	// background: $orange;
+	// font-weight: 600;
+	// color: $darkblue;
 }
 
 .ui-icon-background,
@@ -152,9 +152,9 @@ a.ui-button:active,
 .ui-widget-content .ui-state-highlight,
 .ui-widget-header .ui-state-highlight {
 	border: 0;
-	background: $orange;
-	color: $darkblue;
-	font-weight: 600;
+	// background: $orange;
+	// color: $darkblue;
+	// font-weight: 600;
 }
 
 .ui-state-checked {
@@ -1007,4 +1007,88 @@ a.ui-button:active,
 .ui-widget-shadow {
 	-webkit-box-shadow: 0px 0px 5px #666666;
 	box-shadow: 0px 0px 5px #666666;
+}
+
+// custom
+.ui-autocomplete {
+
+	li.ui-menu-item {
+		padding: 0 30px;
+
+		&:hover,
+		&:focus {
+			font-weight: 400 !important;
+
+			.ui-menu-item-wrapper {
+				font-weight: 400 !important;
+
+			}
+		}
+
+		&:first-child {
+			padding-top: 30px;
+		}
+
+		&:last-child {
+			padding-bottom: 30px;
+
+			.ui-menu-item-wrapper {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.ui-menu-item-wrapper {
+		margin-bottom: 20px;
+		padding: 10px 20px;
+		background: $darkgray;
+		border-radius: 5px;
+	}
+
+	.autocomplete-product {
+
+		&-title,
+		&-desc,
+		&-duration {
+			display: block;
+		}
+
+		&-title {
+			font-weight: 600;
+		}
+
+		&-desc {
+			margin-bottom: 15px;
+		}
+
+		&-duration {
+
+			&:before {
+				content: '';
+				width: 13px;
+				height: 13px;
+				background-image: url('img/icons/clock.svg');
+				background-size: 100%;
+				background-position: center;
+				background-repeat: no-repeat;
+				display: inline-block;
+				margin-right: 10px;
+			}
+		}
+	}
+}
+
+.ui-datepicker {
+
+	.ui-state-active,
+	.ui-widget-content .ui-state-active,
+	.ui-widget-header .ui-state-active,
+	a.ui-button:active,
+	.ui-button:active,
+	.ui-button.ui-state-active:hover {
+		border: 0;
+		background: $orange;
+		font-weight: 600;
+		color: $darkblue;
+	}
 }

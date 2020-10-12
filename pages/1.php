@@ -1,7 +1,7 @@
 <?php require_once('header.php'); ?>
 
 <main class="site-main container">
-    <section class="">
+    <section class="default-content">
         <h1 class="title">Titulinis</h1>
     </section>
 </main>
