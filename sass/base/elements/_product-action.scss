@@ -1,0 +1,64 @@
+.product-action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 5px;
+    background: #f4f4f6;
+    padding: 14px 20px;
+
+    &__info {
+        h4 {
+            font-size: 1em;
+            margin: 0;
+        }
+
+        p {
+            font-size: 0.875em;
+            margin: 0;
+            max-width: 90%;
+        }
+    }
+
+    &__duration,
+    &__price {
+        display: inline-flex;
+        align-items: center;
+        font-weight: 500;
+
+        &:before {
+            content: '';
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-right: 10px;
+            display: block;
+        }
+    }
+
+    &__duration {
+        margin: 10px 20px 0 0;
+
+        &:before {
+            width: 13px;
+            height: 13px;
+            background-image: url('img/icons/clock.svg');
+        }
+    }
+
+    &__price {
+        margin-top: 10px;
+
+        strike {
+            display: inline-block;
+            color: $orange;
+            margin-left: 10px;
+        }
+
+        &:before {
+            width: 12px;
+            height: 13px;
+            background-image: url('img/icons/price.svg');
+        }
+    }
+}

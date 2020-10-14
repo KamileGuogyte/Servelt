@@ -1,5 +1,5 @@
 section.product {
-    margin: 60px 0 30px 0;
+    margin: 0 0 30px 0;
     width: 850px;
 
     .product {
@@ -320,62 +320,6 @@ section.product {
                 width: 100%;
                 margin: 20px 0 10px 0;
             }
-
-            &-action {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                width: 100%;
-                border-radius: 5px;
-                background: #f4f4f6;
-                padding: 14px 20px;
-
-                &-info {
-                    h4 {
-                        margin: 0 0 10px 0;
-                    }
-                }
-
-                &-duration,
-                &-price {
-                    display: inline-flex;
-                    align-items: center;
-                    font-weight: 500;
-
-                    &:before {
-                        content: '';
-                        background-size: cover;
-                        background-position: center;
-                        background-repeat: no-repeat;
-                        margin-right: 10px;
-                        display: block;
-                    }
-                }
-
-                &-duration {
-                    margin-right: 20px;
-
-                    &:before {
-                        width: 13px;
-                        height: 13px;
-                        background-image: url('img/icons/clock.svg');
-                    }
-                }
-
-                &-price {
-                    strike {
-                        display: inline-block;
-                        color: $orange;
-                        margin-left: 10px;
-                    }
-
-                    &:before {
-                        width: 12px;
-                        height: 13px;
-                        background-image: url('img/icons/price.svg');
-                    }
-                }
-            }
         }
     }
 }
@@ -389,4 +333,52 @@ section.product {
     font-size: 1.5em;
     z-index: 10;
     display: none;
+}
+
+.sliding-menu-wrapper {
+    position: relative;
+}
+
+.sliding-menu {
+    margin-top: 70px;
+    position: fixed;
+
+    // top: 0;
+
+    // right: 0;
+    h4 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        margin: 0 0 20px 0;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        ul {
+            font-size: 0.875em;
+            margin: 10px 0 -10px 0;
+
+            li {
+                padding-left: 30px;
+                margin-left: -7px;
+            }
+        }
+    }
+
+    >ul {
+        border-left: 3px solid #eeeeee;
+    }
+
+    li {
+        position: relative;
+        left: -3px;
+        padding: 10px;
+
+        &.active {
+            border-left: 3px solid $darkblue;
+        }
+    }
 }

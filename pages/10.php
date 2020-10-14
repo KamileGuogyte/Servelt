@@ -31,7 +31,7 @@
                 </div>
             </section>
 
-            <section class="product">
+            <section class="product" data-nav-section>
                 <div class="product__header">
                     <h1 class="title">Registruokis</h1>
                     <div class="product__nav">
@@ -94,42 +94,107 @@
                             </div>
                             <?php if($y === 0) { ?>
                             <h3 class="product__block-recommend">Specialistas Jums rekomenduoja užsiregistruoti šiai procedūrai</h3>
-                            <div class="product__block-action">                        
-                                <div class="product__block-action-info">
+                            <div class="product-action product__block-action">                        
+                                <div class="product-action__info">
                                     <h4>Greitasis odos atjauninimas lazeriu</h4>    
-                                    <div class="product__block-action-duration">1 val</div>
-                                    <div class="product__block-action-price">45€<strike>60€</strike></div>
+                                    <div class="product-action__duration">1 val</div>
+                                    <div class="product-action__price">45€<strike>60€</strike></div>
                                 </div>
-                                <button class="button cyan transparent small product__block-action-order">Užsakyti</button>
+                                <button class="button cyan transparent small product-action__order">Užsakyti</button>
                             </div>
                             <?php } ?>
                         </div>
                     <?php } ?>
-
-                    <div class="pagination">
-                        <div class="pagination__list">
-                            <a href="#" class="pagination__button pagination__button--first"></a>
-                            <a href="#" class="pagination__button pagination__button--prev"></a>
-
-                            <a href="#" class="pagination__button">1</a>
-                            <a href="#" class="pagination__button">2</a>
-                            <a href="#" class="pagination__button">3</a>
-                            <a href="#" class="pagination__button">4</a>
-                            <a href="#" class="pagination__button">...</a>
-                            <a href="#" class="pagination__button">10</a>
-                            <a href="#" class="pagination__button">12</a>
-
-                            <a href="#" class="pagination__button pagination__button--next"></a>
-                            <a href="#" class="pagination__button pagination__button--last"></a>
-                        </div>
-                        <div class="pagination__info">
-                            Rodomos eilutės nuo <b>1 - 22</b>  iš  <b>9678</b>  |  Viso puslapių  <b>999</b>  
-                        </div>
-                    </div>
                 </div>
             </section>
-            <?php require_once('footer-menu.php'); ?>
-        </div>        
+
+            <section class="venue-info">
+                <h2 class="venue-info__title">Paslaugos</h2>
+                <?php for($y=0;$y<3;$y++) { ?>  
+                    <h3 class="venue-info__subtitle">Plaukų priežiūra</h3>
+                    <div class="venue-info__list"  data-nav-section>
+                        <?php for($i=0;$i<10;$i++) { ?>      
+                        <div class="product-action product__block-action">                        
+                            <div class="product-action__info">
+                                <h4>Greitasis odos atjauninimas lazeriu</h4>  
+                                <p>Visų pl. dažymas viena spalva, galvos plovimas, modelinis kirpimas, dieninis sušukavimas, dieninis sušukavimas,dieninis sušukavimas,Visų pl. dažymas viena spalva, galvos plovimas, modelinis kirpimas, dieninis sušukavimas, dieninis sušukavimas,dieninis sušukavimas,Visų pl. dažymas viena spalva, galvos plovimas, modelinis kirpimas, dieninis sušukavimas, dieninis sušukavimas,dieninis sušukavimas.</p>  
+                                <div class="product-action__duration">1 val</div>
+                                <div class="product-action__price">45€<strike>60€</strike></div>
+                            </div>
+                            <button class="button cyan transparent small product-action__order">Užsakyti</button>
+                        </div>
+                        <?php } ?>
+                    </div>
+                <?php } ?>
+            </section>
+
+            <section class="venue-info venue-info--partners"  data-nav-section>
+                <h2 class="venue-info__title">Produktai</h2>
+                <h3 class="venue-info__subtitle">Mūsų partneriai</h3>
+                <div class="venue-info__partners">
+                    <div class="venue-info__partner"><img src="http://placehold.it/160x55" /></div>
+                    <div class="venue-info__partner"><img src="http://placehold.it/160x55" /></div>
+                    <div class="venue-info__partner"><img src="http://placehold.it/160x55" /></div>
+                    <div class="venue-info__partner"><img src="http://placehold.it/160x55" /></div>
+                    <div class="venue-info__partner"><img src="http://placehold.it/160x55" /></div>
+                    <div class="venue-info__partner"><img src="http://placehold.it/160x55" /></div>
+                </div>
+            </section>
+
+            <section class="venue-info venue-info--about"  data-nav-section>
+                <h2 class="venue-info__title">Apie mus</h2>
+                <div class="venue-info__description">„Vasco by I.C.O.N. Grožio Studija“, įkurta 2010 metais, yra subūrusi kūrybingus, profesionalius ir darbščius meistrus. 
+Čia dirbantys plaukų stilistai ir kosmetologai puikiai išmano savo darbą, dėl to vis didėja nuolatinių ir naujų klientų ratas.
+
+Grožio salono meistrai nuolat tobulinasi įvairiuose seminaruose ir konkursuose. Jie sutinka kiekvieną klientą maloniai, 
+atsakingai, ypatingą dėmesį skirdami atlieka savo darbą, ir individualiai jums pritaiko informatyvią konsultaciją.
+Mūsų grožio salonuose yra dažoma tik su ECOTECH dažais, kurie iš 90% natūralių ingredientų. Šie dažai yra aliejinio 
+pagrindo be amoniako ir parabenų. EHOTECH COLOR dažai suteikia švelnų poveikį ne tik plaukui, bet ir galvos odai. 
+
+Puikiai uždažo žilus plaukus. I.C.O.N. ECOTECH dažai pagaminti naudojant unikalią technologiją, kuri padeda pakeisti 
+plaukų spalvą, nekenkiant nei plaukų struktūrai, nei mus supančiai aplinkai.
+
+Vasco by I.C.O.N. grožio studijoje yra teikiamos įvairiausios plaukų SPA procedūros.
+Visi I.C.O.N. produktai atitinka aukščiausius kosmetikos gamybai keliamus reikalavimus.</div>
+                <div class="venue-info__map">
+                    <h3 class="venue-info__map-title">Mus rasite</h3>
+                    <div class="venue-info__map-wrapper">
+                        <img src="http://placehold.it/570x230" />
+                    </div>
+                    <div class="venue-info__map-info">
+                        <a href="#">Kalvarijų g. 125, Vilnius, 08221</a>
+                        <a href="#">+370 684 98756</a>
+                    </div>
+                </div>
+                <div class="work-hours venue-info__work-hours">
+                    <h3 class="work-hours__title">Darbo laikas</h3>
+                    <ul>
+                        <?php for($i=0;$i<7;$i++){ ?>
+                        <li><span>Pirmadienis</span><span <?php if($i===0) { ?> class="work-hours__date--red"<?php } ?>>8:00 - 20:00</span></li>
+                        <?php }?>
+                    </ul>
+                </div>
+            </section>
+            <?php require_once('footer-menu.php'); ?> 
+            <div class="sliding-menu-wrapper">
+            <div class="sliding-menu">
+                <h4>TURINYS</h4>
+                <ul>
+                    <li><a href="javascript:void(0);">Registuokis</a></li>
+                    <li>
+                        <a href="javascript:void(0);">Paslaugos</a>
+                        <ul>
+                            <?php for($i=0;$i<3;$i++) { ?>   
+                                <li><a href="javascript:void(0);">Plaukų priežiūra</a></li>
+                            <?php } ?>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0);">Produktai</a></li>
+                    <li><a href="javascript:void(0);">Apie mus</a></li>
+                </ul>
+            </div></div>
+        </div>
+               
     </div>
 </main>
 <div id="test"></div>

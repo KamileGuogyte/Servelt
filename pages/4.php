@@ -73,13 +73,13 @@
                             </div>
                             <?php if($y === 0) { ?>
                             <h3 class="product__block-recommend">Specialistas Jums rekomenduoja užsiregistruoti šiai procedūrai</h3>
-                            <div class="product__block-action">                        
-                                <div class="product__block-action-info">
+                            <div class="product-action product__block-action">                        
+                                <div class="product-action__info">
                                     <h4>Greitasis odos atjauninimas lazeriu</h4>    
-                                    <div class="product__block-action-duration">1 val</div>
-                                    <div class="product__block-action-price">45€<strike>60€</strike></div>
+                                    <div class="product-action__duration">1 val</div>
+                                    <div class="product-action__price">45€<strike>60€</strike></div>
                                 </div>
-                                <button class="button cyan transparent small product__block-action-order">Užsakyti</button>
+                                <button class="button cyan transparent small product-action__order">Užsakyti</button>
                             </div>
                             <?php } ?>
                         </div>

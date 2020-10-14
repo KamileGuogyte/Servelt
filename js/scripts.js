@@ -69,13 +69,38 @@ $(document).ready(function () {
             .append("<div class='autocomplete-product'><span class='autocomplete-product-title'>" + item.title + "</span><span class='autocomplete-product-desc'>" + item.about + "</span><span class='autocomplete-product-duration'>" + item.duration + "</div>")
             .appendTo(ul);
     };
+
+
+    // autocomplete results width fix
+    jQuery.ui.autocomplete.prototype._resizeMenu = function () {
+        console.log(this.element.outerWidth());
+        this.menu.element.css('width', this.element.outerWidth());
+    }
+
     $('.venue__slider').slick({
         arrows: true,
         dots: false,
         slidesToShow: 1,
         // slides
     })
+    $('.venue__description-more').click(function () {
+        $(this).closest('.venue__description').addClass('venue__description--visible')
+    })
 })
+
+$(window).scroll(function () {
+    // sliding menu active on scroll
+    if (!$('.sliding-menu').length) return;
+
+    var scrollDistance = $(window).scrollTop();
+
+    $('*[data-nav-section]').each(function (i) {
+        if ($(this).position().top <= scrollDistance) {
+            $('.sliding-menu li').removeClass('active');
+            $('.sliding-menu li').eq(i).addClass('active');
+        }
+    });
+}).scroll();
 
 $.fn.customCalendar = function () {
     var date = moment('2020-01-01'),
