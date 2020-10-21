@@ -23,8 +23,11 @@
             <li class="site-header__item site-header__item--active"><a href="#">Specialistai</a></li>
             <li class="site-header__item"><a href="#">Įstaigos</a></li>
             <li class="site-header__item"><a href="#">Apie mus</a></li>
-            <li class="site-header__item"><a href="#">Prisijungti</a></li>
+            <li class="site-header__item"><a href="#">Administravimas</a></li>
+            <li class="site-header__item"><a href="#">Mano Serve</a></li>
+            <li class="site-header__item"><a href="#">Atsijungti</a></li>
             <li class="site-header__item"><a href="#"></a></li>
             <li class="site-header__item site-header__item--search"><a href="#"></a></li>
         </ul>
     </header>
+   </div>
