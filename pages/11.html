@@ -1,0 +1,410 @@
+
+  <!doctype html>
+
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+  
+    <title>Serve.lt</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Sen:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+  
+  </head>
+  <body>
+  <div id="page">
+      <form class="search-panel">
+          <input type="text" name="search" placeholder="Paieška" />
+          <button type="button" class="search-panel__close"></button>
+      </form>
+      <header class="site-header site-header--show">
+          <img src="../img/logo.svg" class="site-header__logo" />
+          <ul class="site-header__menu">
+              <li class="site-header__item site-header__item--active"><a href="#">Specialistai</a></li>
+              <li class="site-header__item"><a href="#">Įstaigos</a></li>
+              <li class="site-header__item"><a href="#">Apie mus</a></li>
+              <li class="site-header__item"><a href="#">Administravimas</a></li>
+              <li class="site-header__item"><a href="#">Mano Serve</a></li>
+              <li class="site-header__item"><a href="#">Atsijungti</a></li>
+              <li class="site-header__item"><a href="#"></a></li>
+              <li class="site-header__item site-header__item--search"><a href="#"></a></li>
+          </ul>
+      </header>
+     </div>
+
+    <main class="site-main site-main--aside">
+
+
+       <aside class="site-aside">
+        <div class="site-aside__block site-aside__block--logo site-aside__block--padding">
+            <img src="../img/logo-sidebar.svg" />
+        </div>
+        <div class="site-aside__blocks">
+            <div class="site-aside__block site-aside__block--city site-aside__block--padding">
+                <select>
+                    <option>Vilnius</option>
+                    <option>Vilnius</option>
+                </select>
+            </div>
+
+            <div class="site-aside__block">
+                <h3 class="title title--padding">Rikiuoti pagal atstumą</h3>
+                <div class="radio">
+                    <input name="distance" type="radio" id="distance_asc" class="" value="asc" />
+                    <label for="distance_asc">Arčiausiai nuo manęs</label>
+                </div>
+                <div class="radio">
+                    <input name="distance" type="radio" id="distance_desc" class="" value="desc" />
+                    <label for="distance_desc">Toliausiai nuo manęs</label>
+                </div>
+            </div>
+
+            <div class="site-aside__block">
+                <h3 class="title title--padding">Rikiuoti pagal kainą</h3>
+                <div class="radio">
+                    <input name="price" type="radio" id="price_asc" class="" value="asc" />
+                    <label for="price_asc">Viršuje mažiausia</label>
+                </div>
+                <div class="radio">
+                    <input name="price" type="radio" id="price_desc" class="" value="desc" />
+                    <label for="price_desc">Viršuje didžiausia</label>
+                </div>
+            </div>
+
+            <div class="site-aside__block">
+                <h3 class="title title--padding">Paslaugų tipai</h3>
+                <?php $cats = array(
+                    'Plaukų priežiūra',
+                    'Rankų priežiūra',
+                    'Pėdų priežiūra',
+                    'Veido priežiūra',
+                    'Kūno priežiūra'
+                );
+                foreach($cats as $k => $c) {?>
+                    <div class="checkbox-wrapper">
+                        <div class="checkbox">
+                            <input name="service[]" type="checkbox" id="s<?php echo $k; ?>" class="" value="1" />
+                            <label for="s<?php echo $k; ?>"><?php echo $c; ?></label>
+                        </div>
+                        <div class="checkbox-children">
+                            <div class="checkbox">
+                                <input name="service[]" type="checkbox" id="s<?php echo $k; ?>1" class="" value="1" />
+                                <label for="s<?php echo $k; ?>1">Moterims</label>
+                            </div>
+                            <div class="checkbox">
+                                <input name="service[]" type="checkbox" id="s<?php echo $k; ?>2" class="" value="1" />
+                                <label for="s<?php echo $k; ?>2">Vyrams</label>
+                            </div>
+                            <div class="checkbox">
+                                <input name="service[]" type="checkbox" id="s<?php echo $k; ?>3" class="" value="1" />
+                                <label for="s<?php echo $k; ?>3">Vaikams</label>
+                            </div>
+                        </div>
+                    </div>
+                <?php } ?>
+            </div>
+
+            <div class="site-aside__block">
+                <h3 class="title title--padding">Turi laiko rezervacijai</h3>
+                <div class="checkbox">
+                    <input name="reserve[]" type="checkbox" id="r1" class="" value="1" />
+                    <label for="r1">Dabar</label>
+                </div>
+                <div class="checkbox">
+                    <input name="reserve[]" type="checkbox" id="r2" class="" value="1" />
+                    <label for="r2">Per pietus (12-14 val)</label>
+                </div>
+                <div class="checkbox">
+                    <input name="reserve[]" type="checkbox" id="r3" class="" value="1" />
+                    <label for="r3">Vakare (nuo 18 val)</label>
+                </div>
+            </div>
+            
+            <div class="site-aside__block site-aside__block--padding">
+                <h3 class="title">Aktuali valanda</h3>
+                <select name="time">
+                    <option value="18">18:00</option>
+                    <option value="19">19:00</option>
+                    <option value="20">20:00</option>
+                </select>
+            </div>
+            
+            <div class="site-aside__block">
+                <h3 class="title title--padding">Aktuali savaitės diena</h3>
+                <?php $days = array(
+                    'Pirmadienis',
+                    'Antradienis',
+                    'Trečiadienis',
+                    'Ketvirtadienis',
+                    'Penktadienis',
+                    'Šeštadienis',
+                    'Sekmadienis'                    
+                );
+                foreach($days as $k => $d) { ?>
+                <div class="checkbox">
+                    <input name="days[]" type="checkbox" id="d<?php echo $k; ?>" class="" value="<?php echo $k; ?>" />
+                    <label for="d<?php echo $k; ?>"><?php echo $d; ?></label>
+                </div>
+                <?php } ?>
+            </div>            
+
+            <div class="site-aside__block">
+                <h3 class="title title--padding">Specialūs psiūlymai</h3>
+                <div class="checkbox">
+                    <input name="offers[]" type="checkbox" id="o1" class="" value="1" />
+                    <label for="o1">Šiuo metu taikomos nuolaidos</label>
+                </div>
+                <div class="checkbox">
+                    <input name="offers[]" type="checkbox" id="o2" class="" value="2" />
+                    <label for="o2">Paskutinės minutės pasiūlymai</label>
+                </div>
+            </div>         
+
+            <div class="site-aside__block">
+                <h3 class="title title--padding">Specialistai kalbantys</h3>
+                <?php $lang = array(
+                    'Lietuviškai',                  
+                    'Angliškai',                  
+                    'Rusiškai'                  
+                );
+                foreach($lang as $k => $l) { ?>
+                <div class="checkbox">
+                    <input name="lang[]" type="checkbox" id="l<?php echo $k; ?>" class="" value="<?php echo $k; ?>" />
+                    <label for="l<?php echo $k; ?>"><?php echo $l; ?></label>
+                </div>
+                <?php } ?>
+            </div>
+
+        </div>
+    </aside>
+        <div class="page-content">        
+            <div class="page-content__wrapper">            
+                <section class="product">
+                    <div class="product__header">
+                        <h1 class="title">Paslaugos</h1>
+                    </div>
+
+
+                    <div class="pictograms">
+                        <div class="pic">
+                            <img src="../img/surgery.svg"/>
+                            <h5><a href="#">Klinikos ir <br>estetinė medicina</a></h5></br>    
+                        </div>
+                        <div class="pic">
+                            <img src="../img/surgery.svg"/>
+                            <h5><a href="#">Odontologijos <br>klinikos</a></h5></br>  
+                        </div>
+                        <div class="pic">
+                            <img src="../img/surgery.svg"/>
+                            <h5><a href="#">Grožio salonai</a></h5> 
+                        </div>
+                        <div class="pic">
+                            <img src="../img/surgery.svg"/>
+                            <h5><a href="#">SPA ir masažo <br>salonai</a></h5></br>   
+                        </div>
+                        <div class="pic">
+                            <img src="../img/surgery.svg"/>
+                            <h5><a href="#">Sportas ir <br>rebilitacija</a></h5></br>   
+                        </div>
+                        <div class="pic">
+                            <img src="../img/surgery.svg"/>
+                            <h5><a href="#">Veterinarija</a></h5>
+                        </div>
+                    </div>
+
+
+                    <!--                        <ul>
+                                                <li><a href="#">LT</a></li>
+                                                <li><a href="#">EN</a></li>
+                                                <li><a href="#">RU</a></li>
+                                                <li><button>Trinti</button></li>
+                                                <li><button>Spausdinti</button></li>
+                                                <li><button class="button small orange product__block-order">Aktyvuoti pakeitimus</button></li>
+                    
+                                            </ul>-->
+
+
+
+
+
+
+
+                    <div class="services">
+                        <div class="ser">
+                            <h5>Paslaugų grupė</h5>   
+                            <h5>+ Nauja paslaugų grupė</h5>  
+
+                            <div class="sequence">
+                                <div class="seq"><h5>1</h5></div> 
+                                <div class="seq"><h5>Plaukų priežiūra</h5></div> 
+                            </div>
+
+                            <div class="sequence">
+
+                                <div class="seq"><h5>2</h5></div> 
+                                <div class="seq"><h5>Rankų priežiūra</h5></div> 
+                            </div>
+
+
+                            <div class="sequence">
+                                <div class="seq"><h5>3</h5></div> 
+                                <div class="seq"><h5>Pėdų priežiūra</h5></div> 
+                            </div>
+
+                            <div class="sequence">
+                                <div class="seq"><h5>4</h5></div> 
+                                <div class="seq"><h5>Veido priežiūra</h5></div> 
+                            </div>
+
+
+                            <div class="sequence">
+                                <div class="seq"><h5>5</h5></div> 
+                                <div class="seq"><h5>Kūno priežiūra</h5></div> 
+
+                            </div>
+
+
+
+
+
+
+                        </div>
+                        <div class="ser">
+                            <h5>Paslaugų grupės pogrupis</h5> 
+                            <h5>+ Naujas pogrupis</h5>  
+
+
+                            <div class="sequence">
+                                <div class="seq"><h5>1</h5></div> 
+                                <div class="seq"><h5>Kirpimai</h5></div> 
+                            </div>
+
+                            <div class="sequence">
+
+                                <div class="seq"><h5>2</h5></div> 
+                                <div class="seq"><h5>Šukavimai</h5></div> 
+                            </div>
+
+
+                            <div class="sequence">
+                                <div class="seq"><h5>3</h5></div> 
+                                <div class="seq"><h5>Dažymai</h5></div> 
+                            </div>
+
+                            <div class="sequence">
+                                <div class="seq"><h5>4</h5></div> 
+                                <div class="seq"><h5>Cheminiai</h5></div> 
+                            </div>
+
+
+                            <div class="sequence">
+                                <div class="seq"><h5>5</h5></div> 
+                                <div class="seq"><h5>Gydymai</h5></div> 
+
+                            </div>
+
+                        </div>
+
+
+
+
+
+                        <div class="ser">
+                            <h5>Paslaugos pavadinimas</h5>
+                            <h5>+ Nauja paslauga</h5>   
+                            <div class="sequence">
+                                <div class="seq"><h5>1</h5></div> 
+                                <div class="seq"><h5>Visų plaukų dažymas sruogelėmis</h5></div> 
+                                   <div class="seq"><h5>Visų plaukų dažymas sruogelėmis su folija o ir difhkdsjfsdbfd</h5></div> 
+                            </div>
+
+
+                              <div class="sequence">
+                                <div class="seq"><h5>2</h5></div> 
+                                </div>
+                                  <div class="sequence">
+                                <div class="seq"><h5>Motreu kirpimas</h5></div> 
+                                
+                                   <div class="seq"><h5>Plivimas modeliavikasksdjfhsdkjhfhsegsegees</h5></div> 
+                            </div>
+ 
+                            
+                            
+                            
+                            
+                                   </div>
+                            
+                            
+                            
+                            
+
+                        </div>   
+
+
+
+
+
+
+                        <h5>Balayage / Ombre dažymas</h5>   
+                        <h5>Trumpi plaukai</h5>
+                        <h5>Vidutinio dydžio plaukai</h5>  
+                        <h5>Ilgi plaukai</h5>
+                        <h5>Ilgi plaukai</h5>
+                        <h5>Moterų kirpimas</h5>   
+                        <h5>Trumpi plaukai</h5>
+                        <h5>Vidutinio dydžio plaukai</h5>  
+                        <h5>Ilgi plaukai</h5>
+                        <h5>Ilgi plaukai</h5>
+                        <h5>Balayage / Ombre dažymas</h5>   
+                        <h5>Trumpi plaukai</h5>
+                        <h5>Vidutinio dydžio plaukai</h5>  
+                        <h5>Ilgi plaukai</h5>
+                        <h5>Ilgi plaukai</h5>
+                        <h5>Ilgi plaukai</h5>
+
+
+
+                    </div>
+                    <div class="ser">
+                        <h5>Paslaugos detalizavimas</h5>
+
+                    </div>
+            </div>
+
+
+
+
+
+
+            </section>
+           
+<footer class="site-footer container">
+    <img src="../img/logo-footer.svg" class="site-footer__logo" />
+    <ul class="site-footer__menu">
+        <li class="site-footer__item"><a href="#">Privatumo politika</a></li>
+        <li class="site-footer__item"><a href="#">Teisinės nuostatos</a></li>
+        <li class="site-footer__item"><a href="#">Pagalba ir kontaktai</a></li>
+    </ul>
+    <ul class="site-footer__langs">
+        <li><a href="#">EN</a></li>
+        <li><a href="#">RU</a></li>
+    </ul>
+</footer>
+
+</div>
+        </div>
+    </div>
+</main>
+<div id="test"></div>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script src="../js/datepicker-lt.js"></script>
+<script src="../js/select2.min.js"></script>
+<script src="../js/moment-with-locales.min.js"></script>
+<script src="../js/slick.min.js"></script>
+<script src="../js/scripts.js"></script>
+</body>
+</html>
+</body>
+</html>
