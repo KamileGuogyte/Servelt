@@ -4,19 +4,12 @@
         <img src="../img/logo-sidebar.svg" />
     </div>
     <div class="site-aside__blocks">
-
-
         <div class="site-aside__block">
             <h3 class="title title--padding">Paslaugų gavėjai</h3>
             <div class="list">
                 <li class="list__item"><a href="#">Paslaugų gavėjų profiliai</a></li>
                 <li class="list__item"><a href="#">Rezervacijos</a></li>
-             
-           
-                
-                
-                
-                <li class="list__item"><a href="#">Neturi mano sąrašo</a></li>
+               <li class="list__item"><a href="#">Neturi mano sąrašo</a></li>
             </div>         
         </div>
         <div class="site-aside__block">
