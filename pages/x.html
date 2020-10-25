@@ -12,12 +12,113 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Sen:wght@400;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
-   
-   <style>
+
+
+    <style>
+        .pictograms {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding-bottom: 100px;
+        }
+
+
+        .pic {
+         
+        }
+
+        .images_main {
+            margin-right: 10px;
+            border-top-width: 1px;
+            border-right-width: 1px;
+            border-bottom-width: 1px;
+            border-left-width: 1px;
+        }
 
 
 
-   </style>
+        .text_pic {
+            font-family: 'Sen';
+            color: #0f1d5b;
+            font-size: 10px;
+            font-weight: 900;
+            line-height: 1;
+            margin-top: 20px;
+            max-width: 100px;
+        }
+
+
+        #image-1 {
+            background-color: #fec994;
+            border-radius: 1000px;
+            width: 2000px;
+            padding: 15px;
+
+        }
+
+        #image-2 {
+            background-color: #cce2ff;
+            border-radius: 1000px;
+            width: 2000px;
+            padding: 15px;
+        }
+
+        #image-3 {
+            background-color: #fed9c9;
+            border-radius: 1000px;
+            width: 2000px;
+            padding: 15px;
+        }
+
+        #image-4 {
+            background-color: #ffefd8;
+            border-radius: 1000px;
+            width: 1500px;
+            padding: 15x;
+        }
+
+        #image-5 {
+            background-color: #e2c4ae;
+            border-radius: 1000px;
+            width: 2000px;
+            padding: 15px;
+        }
+
+        #image-6 {
+            background-color: #c1e1d2;
+            border-radius: 1000px;
+            width: 2000px;
+            padding: 15px;
+        }
+
+        .middle li {
+            display: block;
+            float: left;
+        }
+
+.services {
+    display: inline-block
+}
+
+.ser {
+    width: 200px;
+    height: 30px;
+}
+
+
+    </style>
+
+<script type="text/JavaScript">
+function createNewElement() {
+	var txtNewInputBox = document.createElement('div');
+	txtNewInputBox.innerHTML = "<input type='text' id='newInputBox'>";
+	document.getElementById("newElementId").appendChild(txtNewInputBox);
+}
+</script>
+
+
+
 
 
 </head>
@@ -43,8 +144,7 @@
         </header>
     </div>
 
-    <button
-        class="button small gray transparent product__block-like <?php if($y!==1) { ?>product__block-like--active<?php } ?>">Mano</button>
+
     <main class="site-main site-main--aside">
 
         <aside class="site-aside">
@@ -92,119 +192,151 @@
             <div class="page-content__wrapper">
                 <section class="product">
                     <div class="product__header">
-                        <h1 class="title">Paslaugos</h1>
+                        <h2 class="title">Paslaugos</h2>
                     </div>
-
-
-
-                    <div id="div_block-12-36" class="ct-div-block services-row">
-                        <div id="div_block-13-36" class="ct-div-block service-block-wrap">
-                            <div id="div_block-14-36" class="ct-div-block neumorphism service-block-3">
-                                <img id="image-15-36" alt=""src="http://1.specto.lt/serve-online/wp-content/uploads/2020/10/chirurgija-10-01.svg"
-                                    class="ct-image service-img">
-                                </div>
-                            <div id="text_block-16-36" class="ct-text-block service-block-text">Klinikos ir estetinė
-                                medicina
-                            </div>
-                        </div>
-
-                        <div id="div_block-17-36" class="ct-div-block service-block-wrap">
-                            <div id="div_block-18-36" class="ct-div-block neumorphism service-block-3"><img
-                                    id="image-19-36" alt=""src="http://1.specto.lt/serve-online/wp-content/uploads/2020/10/odontologija-10-01.svg"
-                                    class="ct-image service-img">
-                                </div>
-                            <div id="text_block-20-36" class="ct-text-block service-block-text">Odontologijos klinikos
-                            </div>
-                        </div>
-
-                        <div id="div_block-21-36" class="ct-div-block service-block-wrap">
-                            <div id="div_block-22-36" class="ct-div-block neumorphism service-block-3"><img
-                                    id="image-23-36" alt=""src="http://1.specto.lt/serve-online/wp-content/uploads/2020/10/salonai-10-01.svg"
-                                    class="ct-image service-img">
-                                </div>
-                            <div id="text_block-24-36" class="ct-text-block service-block-text">Grožio salonai<br>
-                            </div>
-                        </div>
-
-                        <div id="div_block-25-36" class="ct-div-block service-block-wrap">
-                            <div id="div_block-26-36" class="ct-div-block neumorphism service-block-3">
-                                <img id="image-27-36" alt=""src="http://1.specto.lt/serve-online/wp-content/uploads/2020/10/reabilitacija-10-01.svg"
-                                    class="ct-image service-img">
-                                </div>
-                            <div id="text_block-28-36" class="ct-text-block service-block-text">SPA ir masažo salonai
-                            </div>
-                        </div>
-
-                        <div id="div_block-29-36" class="ct-div-block service-block-wrap">
-                            <div id="div_block-30-36" class="ct-div-block neumorphism service-block-3"><img
-                                    id="image-31-36" alt=""src="http://1.specto.lt/serve-online/wp-content/uploads/2020/10/sportas-10-01.svg"
-                                    class="ct-image service-img">
-                                </div>
-                            <div id="text_block-32-36" class="ct-text-block service-block-text">Sportas ir reabilitacija
-                            </div>
-                        </div>
-
-                        <div id="div_block-33-36" class="ct-div-block service-block-wrap">
-                            <div id="div_block-34-36" class="ct-div-block neumorphism service-block-3"><img
-                                    id="image-35-36" alt=""src="http://1.specto.lt/serve-online/wp-content/uploads/2020/10/veterinarija-10-01.svg"
-                                    class="ct-image service-img">
-                                </div>
-                            <div id="text_block-36-36" class="ct-text-block service-block-text">Veterinarija
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
                     <div class="pictograms">
-                        <div class="pic">
 
-                            <img id="image-1" alt=""
-                                src="http://1.specto.lt/serve-online/wp-content/uploads/2020/10/chirurgija-10-01.svg">
-                            <h5><a href="#">Klinikos ir estetinė medicina</a></h5>
-                        </div>
 
                         <div class="pic">
-                            <img id="image-2" alt=""
-                                src="http://1.specto.lt/serve-online/wp-content/uploads/2020/10/odontologija-10-01.svg">
-                            <h5><a href="#">Odontologijos klinikos</a></h5>
+
+                            <div class="images_main">
+                                <img id="image-1" alt=""
+                                    src="http://1.specto.lt/serve-online/wp-content/uploads/2020/10/chirurgija-10-01.svg">
+                            </div>
+
+                            <div class="text_pic"><a href="#">Klinikos ir estetinė medicina</a>
+                            </div>
                         </div>
+
                         <div class="pic">
-                            <img id="image-3" alt=""
-                                src="http://1.specto.lt/serve-online/wp-content/uploads/2020/10/salonai-10-01.svg">
-                            <h5><a href="#">Grožio salonai</a></h5>
+
+                            <div class="images_main">
+                                <img id="image-2" alt=""
+                                    src="http://1.specto.lt/serve-online/wp-content/uploads/2020/10/odontologija-10-01.svg">
+                            </div>
+
+                            <div class="text_pic"><a href="#">Odontologijos klinikos</a>
+                            </div>
                         </div>
+
+
                         <div class="pic">
-                            <img id="image-4" alt=""
-                                src="http://1.specto.lt/serve-online/wp-content/uploads/2020/10/reabilitacija-10-01.svg">
-                            <h5><a href="#">SPA ir masažo salonai</a></h5>
+
+                            <div class="images_main">
+                                <img id="image-3" alt=""
+                                    src="http://1.specto.lt/serve-online/wp-content/uploads/2020/10/salonai-10-01.svg">
+                            </div>
+
+                            <div class="text_pic"><a href="#">Grožio salonai</a>
+                            </div>
                         </div>
+
+
+
                         <div class="pic">
-                            <img id="image-5" alt=""
-                                src="http://1.specto.lt/serve-online/wp-content/uploads/2020/10/sportas-10-01.svg">
-                            <h5><a href="#">Sportas ir rebilitacija</a></h5>
+
+                            <div class="images_main">
+                                <img id="image-4" alt=""
+                                    src="http://1.specto.lt/serve-online/wp-content/uploads/2020/10/reabilitacija-10-01.svg">
+                            </div>
+
+                            <div class="text_pic"><a href="#">Spa ir masažo salonai</a>
+                            </div>
                         </div>
+
+
                         <div class="pic">
-                            <img id="image-6" alt=""
-                                src="http://1.specto.lt/serve-online/wp-content/uploads/2020/10/veterinarija-10-01.svg">
-                            <h5><a href="#">Veterinarija</a></h5>
+
+                            <div class="images_main">
+                                <img id="image-5" alt=""
+                                    src="http://1.specto.lt/serve-online/wp-content/uploads/2020/10/sportas-10-01.svg">
+                            </div>
+
+                            <div class="text_pic"><a href="#">Sportas ir reabilitacija</a>
+                            </div>
                         </div>
+
+                        <div class="pic">
+
+                            <div class="images_main">
+                                <img id="image-6" alt=""
+                                    src="http://1.specto.lt/serve-online/wp-content/uploads/2020/10/veterinarija-10-01.svg">
+                            </div>
+
+                            <div class="text_pic"><a href="#">Veterinarija</a>
+                            </div>
+                        </div>
+
                     </div>
+
+
+                   
+                        <div class="middle">
+                            <li><a href="#">LT</a></li>
+                            <li><a>|</a></li>
+                            <li><a href="#">EN</a></li>
+                            <li><a>|</a></li>
+                            <li><a href="#">RU</a></li>
+                    </div>
+
+
+
+                    <div class="services">
+                        <div class="ser">
+                            <h5>Paslaugų grupė</h5>  
+                            
+                            <div id="dynamicCheck">
+                                <input type="button" value="Create Element" onclick="createNewElement();"/>
+                             </div>
+                             
+                             <div id="newElementId"></div>
+
+
+
+                            </div>
+
+                            <div class="ser">
+                                <h5>Pogrupis</h5>   
+                                <div id="dynamicCheck">
+                                    <input type="button" value="Create Element" onclick="createNewElement();"/>
+                                 </div>
+                                 
+                                 <div id="newElementId"></div>
+                                </div>
+
+                                <div class="ser">
+                                    <h5>Paslaugos pavadinimas</h5>   
+                                    <div id="dynamicCheck">
+                                        <input type="button" value="Create Element" onclick="createNewElement();"/>
+                                     </div>
+                                     
+                                     <div id="newElementId"></div>
+                                    </div>
+
+                                    <div class="ser">
+                                        <h5>Paslaugos detalizavimas</h5>   
+                                        <div id="dynamicCheck">
+                                            <input type="button" value="Create Element" onclick="createNewElement();"/>
+                                         </div>
+                                         
+                                         <div id="newElementId"></div>
+                                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            </div>
+                            
+                        
